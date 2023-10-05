@@ -10,7 +10,6 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -50,34 +49,24 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           ))}
         </div>
       </Tilt>
-    </motion.div>
   );
 };
 
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-      </motion.div>
 
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
+                <div  className="w-full flex mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] ">
           My web development portfolio is a testament to my dedication to creating meaningful and
           impactful digital experiences. I've had the pleasure of working on an array of projects,
           each with its unique challenges and opportunities. From crafting visually engaging
           websites to developing robust web applications, my work reflects a passion for innovation
           and problem-solving. Dive into these projects to see how I've translated ideas into
-          functional, user-friendly, and aesthetically pleasing web solutions. <br /> More projects
-          on My{" "}
-          <a href="https://github.com/JatinShivlani" style={{ textDecoration: "underline" }}>
-            GitHub
+          functional and user-friendly web solutions. More projects
+          on My <a href="https://github.com/JatinShivlani" style={{ textDecoration: "underline" }}>GitHub
           </a>
-        </motion.p>
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7 justify-center md:justify-start">
