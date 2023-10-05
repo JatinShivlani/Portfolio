@@ -64,9 +64,7 @@ const Works = () => {
           each with its unique challenges and opportunities. From crafting visually engaging
           websites to developing robust web applications, my work reflects a passion for innovation
           and problem-solving. Dive into these projects to see how I've translated ideas into
-          functional and user-friendly web solutions. More projects
-          on My <a href="https://github.com/JatinShivlani" style={{ textDecoration: "underline" }}>GitHub
-          </a>
+          functional and user-friendly web solutions. 
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7 justify-center md:justify-start">
